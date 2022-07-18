@@ -43,8 +43,8 @@ No provider.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| namespace | The project namespace to use for unique resource naming | `string` | `"LL-TEST"` | no |
-| region | AWS region | `string` | `"us-east-1"` | no |
+| namespace | The project namespace to use for unique resource naming | `string` | `"sramika"` | no |
+| region | AWS region | `string` | `"ap-south-1"` | no |
 
 ## Outputs
 
