@@ -19,7 +19,7 @@ Both security groups are dynamically created in the network module.
 
 ## High level diagram
 
-![Diagram](img/demo-tform-aws-vpc.png)
+![Diagram](VM.png)
 
 ## Current state
 
