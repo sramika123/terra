@@ -12,7 +12,7 @@ data "aws_ami" "amazon-linux-2" {
 }
 
 // Configure the EC2 instance in a public subnet
-resource "aws_instance" "ec2_public" {
+resource "aws_instance" "ec2_public"[count= 2] {
    ami                         = data.aws_ami.amazon-linux-2.id
   associate_public_ip_address = true
   instance_type               = "t2.micro"
@@ -53,7 +53,6 @@ resource "aws_instance" "ec2_public" {
 
 // Configure the EC2 instance in a private subnet
 resource "aws_instance" "ec2_private" { 
-  count =  2  
   ami                         = data.aws_ami.amazon-linux-2.id
   associate_public_ip_address = false
   instance_type               = "t2.micro"
