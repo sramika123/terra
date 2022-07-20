@@ -20,3 +20,4 @@ variable "sg_priv_id" {
 variable "ec2_public_count" {
   type = number
   default = "2"
+}
