@@ -17,4 +17,8 @@ variable "sg_pub_id" {
 variable "sg_priv_id" {
   type = any
 }
+variable "ec2_public_count" {
+  type = number
+  default = "1"
+}
 
