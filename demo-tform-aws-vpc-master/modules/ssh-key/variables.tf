@@ -1,3 +1,3 @@
 variable "namespace" {
-  type = (list)string
+  type = string
 }
