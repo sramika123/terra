@@ -17,8 +17,9 @@ resource "aws_instance" "ec2_public" {
   associate_public_ip_address = true
   instance_type               = "t2.micro"
   key_name                    = var.key_name
+  count = var.ec2_public_count
  
-  subnet_id                   = var.vpc.public_subnets[0]
+  subnet_id                   = element(var.vpc.public_subnets[0],count.index)
   vpc_security_group_ids      = [var.sg_pub_id]
   tags = {
     "Name" = "${var.namespace}-EC2-PUBLIC"
